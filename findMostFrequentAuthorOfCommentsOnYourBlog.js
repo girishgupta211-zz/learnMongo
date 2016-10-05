@@ -1,5 +1,5 @@
 db.posts.aggregate([{ $unwind : '$comments'  } , { $group : { _id: '$comments.author' , count : { $sum: 1 } } } , {
-    $sort : { count: -1 } }  ])
+    $sort : { count: -1 } } , {'$limit' : 10 } ])
 { "_id" : "Elizabet Kleine", "count" : 503 }
 { "_id" : "Carli Belvins", "count" : 480 }
 { "_id" : "Mariette Batdorf", "count" : 478 }
