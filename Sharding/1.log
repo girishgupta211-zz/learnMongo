@@ -1,0 +1,160 @@
+2016-10-07T09:59:34.033+0530 W -        [initandlisten] Detected unclean shutdown - /data/rs1/mongod.lock is not empty.
+2016-10-07T09:59:34.037+0530 I JOURNAL  [initandlisten] journal dir=/data/rs1/journal
+2016-10-07T09:59:34.037+0530 I JOURNAL  [initandlisten] recover begin
+2016-10-07T09:59:34.037+0530 I JOURNAL  [initandlisten] recover lsn: 225165
+2016-10-07T09:59:34.037+0530 I JOURNAL  [initandlisten] recover /data/rs1/journal/j._0
+2016-10-07T09:59:34.058+0530 I JOURNAL  [initandlisten] recover skipping application of section seq:0 < lsn:225165
+2016-10-07T09:59:34.058+0530 I JOURNAL  [initandlisten] recover skipping application of section seq:46650 < lsn:225165
+2016-10-07T09:59:34.058+0530 I JOURNAL  [initandlisten] recover skipping application of section seq:73213 < lsn:225165
+2016-10-07T09:59:34.058+0530 I JOURNAL  [initandlisten] recover skipping application of section seq:165679 < lsn:225165
+2016-10-07T09:59:34.196+0530 I JOURNAL  [initandlisten] recover cleaning up
+2016-10-07T09:59:34.196+0530 I JOURNAL  [initandlisten] removeJournalFiles
+2016-10-07T09:59:34.252+0530 I JOURNAL  [initandlisten] recover done
+2016-10-07T09:59:34.252+0530 I JOURNAL  [initandlisten] preallocating a journal file /data/rs1/journal/prealloc.0
+2016-10-07T09:59:35.624+0530 I JOURNAL  [durability] Durability thread started
+2016-10-07T09:59:35.624+0530 I JOURNAL  [journal writer] Journal writer thread started
+2016-10-07T09:59:35.687+0530 I CONTROL  [initandlisten] MongoDB starting : pid=22585 port=27017 dbpath=/data/rs1 64-bit host=Gemini-girgup
+2016-10-07T09:59:35.687+0530 I CONTROL  [initandlisten] ** WARNING: You are running this process as the root user, which is not recommended.
+2016-10-07T09:59:35.687+0530 I CONTROL  [initandlisten] 
+2016-10-07T09:59:35.687+0530 I CONTROL  [initandlisten] 
+2016-10-07T09:59:35.687+0530 I CONTROL  [initandlisten] ** WARNING: /sys/kernel/mm/transparent_hugepage/enabled is 'always'.
+2016-10-07T09:59:35.687+0530 I CONTROL  [initandlisten] **        We suggest setting it to 'never'
+2016-10-07T09:59:35.687+0530 I CONTROL  [initandlisten] 
+2016-10-07T09:59:35.687+0530 I CONTROL  [initandlisten] ** WARNING: /sys/kernel/mm/transparent_hugepage/defrag is 'always'.
+2016-10-07T09:59:35.687+0530 I CONTROL  [initandlisten] **        We suggest setting it to 'never'
+2016-10-07T09:59:35.687+0530 I CONTROL  [initandlisten] 
+2016-10-07T09:59:35.687+0530 I CONTROL  [initandlisten] db version v3.0.7
+2016-10-07T09:59:35.687+0530 I CONTROL  [initandlisten] git version: 6ce7cbe8c6b899552dadd907604559806aa2e9bd
+2016-10-07T09:59:35.687+0530 I CONTROL  [initandlisten] build info: Linux ip-10-229-88-125 3.13.0-24-generic #46-Ubuntu SMP Thu Apr 10 19:11:08 UTC 2014 x86_64 BOOST_LIB_VERSION=1_49
+2016-10-07T09:59:35.687+0530 I CONTROL  [initandlisten] allocator: tcmalloc
+2016-10-07T09:59:35.687+0530 I CONTROL  [initandlisten] options: { net: { port: 27017 }, processManagement: { fork: true }, replication: { oplogSizeMB: 64, replSet: "m101" }, storage: { dbPath: "/data/rs1", mmapv1: { smallFiles: true } }, systemLog: { destination: "file", path: "1.log" } }
+2016-10-07T09:59:35.702+0530 I NETWORK  [initandlisten] waiting for connections on port 27017
+2016-10-07T09:59:35.703+0530 W NETWORK  [ReplicationExecutor] Failed to connect to 127.0.0.1:27018, reason: errno:111 Connection refused
+2016-10-07T09:59:35.703+0530 W NETWORK  [ReplicationExecutor] Failed to connect to 127.0.0.1:27019, reason: errno:111 Connection refused
+2016-10-07T09:59:35.703+0530 I REPL     [ReplicationExecutor] New replica set config in use: { _id: "m101", version: 1, members: [ { _id: 0, host: "localhost:27017", arbiterOnly: false, buildIndexes: true, hidden: false, priority: 0.0, tags: {}, slaveDelay: 5, votes: 1 }, { _id: 1, host: "localhost:27018", arbiterOnly: false, buildIndexes: true, hidden: false, priority: 1.0, tags: {}, slaveDelay: 0, votes: 1 }, { _id: 2, host: "localhost:27019", arbiterOnly: false, buildIndexes: true, hidden: false, priority: 1.0, tags: {}, slaveDelay: 0, votes: 1 } ], settings: { chainingAllowed: true, heartbeatTimeoutSecs: 10, getLastErrorModes: {}, getLastErrorDefaults: { w: 1, wtimeout: 0 } } }
+2016-10-07T09:59:35.703+0530 I REPL     [ReplicationExecutor] This node is localhost:27017 in the config
+2016-10-07T09:59:35.703+0530 I REPL     [ReplicationExecutor] transition to STARTUP2
+2016-10-07T09:59:35.703+0530 I REPL     [ReplicationExecutor] Starting replication applier threads
+2016-10-07T09:59:35.703+0530 I REPL     [ReplicationExecutor] transition to RECOVERING
+2016-10-07T09:59:35.704+0530 W NETWORK  [ReplExecNetThread-0] Failed to connect to 127.0.0.1:27018, reason: errno:111 Connection refused
+2016-10-07T09:59:35.704+0530 W NETWORK  [ReplExecNetThread-1] Failed to connect to 127.0.0.1:27019, reason: errno:111 Connection refused
+2016-10-07T09:59:35.704+0530 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27019; Location18915 Failed attempt to connect to localhost:27019; couldn't connect to server localhost:27019 (127.0.0.1), connection attempt failed
+2016-10-07T09:59:35.704+0530 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27018; Location18915 Failed attempt to connect to localhost:27018; couldn't connect to server localhost:27018 (127.0.0.1), connection attempt failed
+2016-10-07T09:59:35.705+0530 W NETWORK  [ReplExecNetThread-1] Failed to connect to 127.0.0.1:27018, reason: errno:111 Connection refused
+2016-10-07T09:59:35.705+0530 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27018; Location18915 Failed attempt to connect to localhost:27018; couldn't connect to server localhost:27018 (127.0.0.1), connection attempt failed
+2016-10-07T09:59:35.705+0530 I REPL     [ReplicationExecutor] transition to SECONDARY
+2016-10-07T09:59:35.705+0530 W NETWORK  [ReplExecNetThread-0] Failed to connect to 127.0.0.1:27019, reason: errno:111 Connection refused
+2016-10-07T09:59:35.705+0530 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27019; Location18915 Failed attempt to connect to localhost:27019; couldn't connect to server localhost:27019 (127.0.0.1), connection attempt failed
+2016-10-07T09:59:35.705+0530 W NETWORK  [ReplExecNetThread-1] Failed to connect to 127.0.0.1:27018, reason: errno:111 Connection refused
+2016-10-07T09:59:35.705+0530 W NETWORK  [ReplExecNetThread-0] Failed to connect to 127.0.0.1:27019, reason: errno:111 Connection refused
+2016-10-07T09:59:35.705+0530 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27019; Location18915 Failed attempt to connect to localhost:27019; couldn't connect to server localhost:27019 (127.0.0.1), connection attempt failed
+2016-10-07T09:59:35.705+0530 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27018; Location18915 Failed attempt to connect to localhost:27018; couldn't connect to server localhost:27018 (127.0.0.1), connection attempt failed
+2016-10-07T09:59:35.898+0530 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:45181 #1 (1 connection now open)
+2016-10-07T09:59:37.332+0530 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:45186 #2 (2 connections now open)
+2016-10-07T09:59:37.333+0530 I NETWORK  [conn2] end connection 127.0.0.1:45186 (1 connection now open)
+2016-10-07T09:59:37.335+0530 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:45189 #3 (2 connections now open)
+2016-10-07T09:59:37.705+0530 W NETWORK  [ReplExecNetThread-1] Failed to connect to 127.0.0.1:27019, reason: errno:111 Connection refused
+2016-10-07T09:59:37.705+0530 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27019; Location18915 Failed attempt to connect to localhost:27019; couldn't connect to server localhost:27019 (127.0.0.1), connection attempt failed
+2016-10-07T09:59:37.706+0530 W NETWORK  [ReplExecNetThread-1] Failed to connect to 127.0.0.1:27019, reason: errno:111 Connection refused
+2016-10-07T09:59:37.706+0530 I REPL     [ReplicationExecutor] Member localhost:27018 is now in state SECONDARY
+2016-10-07T09:59:37.706+0530 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27019; Location18915 Failed attempt to connect to localhost:27019; couldn't connect to server localhost:27019 (127.0.0.1), connection attempt failed
+2016-10-07T09:59:37.706+0530 W NETWORK  [ReplExecNetThread-0] Failed to connect to 127.0.0.1:27019, reason: errno:111 Connection refused
+2016-10-07T09:59:37.706+0530 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27019; Location18915 Failed attempt to connect to localhost:27019; couldn't connect to server localhost:27019 (127.0.0.1), connection attempt failed
+2016-10-07T09:59:39.120+0530 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:45201 #4 (3 connections now open)
+2016-10-07T09:59:39.120+0530 I NETWORK  [conn4] end connection 127.0.0.1:45201 (2 connections now open)
+2016-10-07T09:59:39.122+0530 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:45203 #5 (3 connections now open)
+2016-10-07T09:59:39.707+0530 I REPL     [ReplicationExecutor] Member localhost:27019 is now in state SECONDARY
+2016-10-07T09:59:42.159+0530 I REPL     [ReplicationExecutor] replSetElect voting yea for localhost:27019 (2)
+2016-10-07T09:59:43.418+0530 I NETWORK  [conn1] end connection 127.0.0.1:45181 (2 connections now open)
+2016-10-07T09:59:43.708+0530 I REPL     [ReplicationExecutor] Member localhost:27019 is now in state PRIMARY
+2016-10-07T10:00:07.345+0530 I NETWORK  [conn3] end connection 127.0.0.1:45189 (1 connection now open)
+2016-10-07T10:00:07.345+0530 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:45211 #6 (3 connections now open)
+2016-10-07T10:00:09.132+0530 I NETWORK  [conn5] end connection 127.0.0.1:45203 (1 connection now open)
+2016-10-07T10:00:09.132+0530 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:45213 #7 (2 connections now open)
+2016-10-07T10:00:37.355+0530 I NETWORK  [conn6] end connection 127.0.0.1:45211 (1 connection now open)
+2016-10-07T10:00:37.355+0530 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:45231 #8 (2 connections now open)
+2016-10-07T10:00:39.140+0530 I NETWORK  [conn7] end connection 127.0.0.1:45213 (1 connection now open)
+2016-10-07T10:00:39.141+0530 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:45233 #9 (3 connections now open)
+2016-10-07T10:00:45.679+0530 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:45237 #10 (3 connections now open)
+2016-10-07T10:01:07.363+0530 I NETWORK  [conn8] end connection 127.0.0.1:45231 (2 connections now open)
+2016-10-07T10:01:07.363+0530 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:45244 #11 (4 connections now open)
+2016-10-07T10:01:09.151+0530 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:45246 #12 (4 connections now open)
+2016-10-07T10:01:09.151+0530 I NETWORK  [conn9] end connection 127.0.0.1:45233 (2 connections now open)
+2016-10-07T10:01:37.376+0530 I NETWORK  [conn11] end connection 127.0.0.1:45244 (2 connections now open)
+2016-10-07T10:01:37.376+0530 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:45251 #13 (3 connections now open)
+2016-10-07T10:01:39.160+0530 I NETWORK  [conn12] end connection 127.0.0.1:45246 (2 connections now open)
+2016-10-07T10:01:39.161+0530 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:45254 #14 (3 connections now open)
+2016-10-07T10:02:07.385+0530 I NETWORK  [conn13] end connection 127.0.0.1:45251 (2 connections now open)
+2016-10-07T10:02:07.386+0530 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:45258 #15 (3 connections now open)
+2016-10-07T10:02:09.170+0530 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:45260 #16 (4 connections now open)
+2016-10-07T10:02:09.170+0530 I NETWORK  [conn14] end connection 127.0.0.1:45254 (2 connections now open)
+2016-10-07T10:02:37.396+0530 I NETWORK  [conn15] end connection 127.0.0.1:45258 (2 connections now open)
+2016-10-07T10:02:37.396+0530 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:45265 #17 (4 connections now open)
+2016-10-07T10:02:39.178+0530 I NETWORK  [conn16] end connection 127.0.0.1:45260 (2 connections now open)
+2016-10-07T10:02:39.178+0530 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:45267 #18 (4 connections now open)
+2016-10-07T10:03:07.406+0530 I NETWORK  [conn17] end connection 127.0.0.1:45265 (2 connections now open)
+2016-10-07T10:03:07.407+0530 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:45274 #19 (3 connections now open)
+2016-10-07T10:03:09.187+0530 I NETWORK  [conn18] end connection 127.0.0.1:45267 (2 connections now open)
+2016-10-07T10:03:09.187+0530 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:45276 #20 (3 connections now open)
+2016-10-07T10:03:37.419+0530 I NETWORK  [conn19] end connection 127.0.0.1:45274 (2 connections now open)
+2016-10-07T10:03:37.419+0530 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:45282 #21 (4 connections now open)
+2016-10-07T10:03:39.196+0530 I NETWORK  [conn20] end connection 127.0.0.1:45276 (2 connections now open)
+2016-10-07T10:03:39.197+0530 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:45284 #22 (4 connections now open)
+2016-10-07T10:04:07.432+0530 I NETWORK  [conn21] end connection 127.0.0.1:45282 (2 connections now open)
+2016-10-07T10:04:07.432+0530 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:45288 #23 (4 connections now open)
+2016-10-07T10:04:09.208+0530 I NETWORK  [conn22] end connection 127.0.0.1:45284 (2 connections now open)
+2016-10-07T10:04:09.209+0530 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:45290 #24 (3 connections now open)
+2016-10-07T10:04:37.445+0530 I NETWORK  [conn23] end connection 127.0.0.1:45288 (2 connections now open)
+2016-10-07T10:04:37.446+0530 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:45295 #25 (3 connections now open)
+2016-10-07T10:04:39.218+0530 I NETWORK  [conn24] end connection 127.0.0.1:45290 (2 connections now open)
+2016-10-07T10:04:39.219+0530 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:45298 #26 (3 connections now open)
+2016-10-07T10:05:07.455+0530 I NETWORK  [conn25] end connection 127.0.0.1:45295 (2 connections now open)
+2016-10-07T10:05:07.456+0530 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:45305 #27 (3 connections now open)
+2016-10-07T10:05:09.232+0530 I NETWORK  [conn26] end connection 127.0.0.1:45298 (2 connections now open)
+2016-10-07T10:05:09.232+0530 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:45307 #28 (3 connections now open)
+2016-10-07T10:05:37.468+0530 I NETWORK  [conn27] end connection 127.0.0.1:45305 (2 connections now open)
+2016-10-07T10:05:37.468+0530 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:45315 #29 (4 connections now open)
+2016-10-07T10:05:39.245+0530 I NETWORK  [conn28] end connection 127.0.0.1:45307 (2 connections now open)
+2016-10-07T10:05:39.245+0530 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:45317 #30 (3 connections now open)
+2016-10-07T10:06:07.477+0530 I NETWORK  [conn29] end connection 127.0.0.1:45315 (2 connections now open)
+2016-10-07T10:06:07.477+0530 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:45338 #31 (4 connections now open)
+2016-10-07T10:06:09.254+0530 I NETWORK  [conn30] end connection 127.0.0.1:45317 (2 connections now open)
+2016-10-07T10:06:09.254+0530 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:45341 #32 (4 connections now open)
+2016-10-07T10:06:27.241+0530 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:45355 #33 (4 connections now open)
+2016-10-07T10:06:27.241+0530 I NETWORK  [conn33] end connection 127.0.0.1:45355 (3 connections now open)
+2016-10-07T10:06:37.485+0530 I NETWORK  [conn31] end connection 127.0.0.1:45338 (2 connections now open)
+2016-10-07T10:06:37.485+0530 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:45357 #34 (3 connections now open)
+2016-10-07T10:06:39.265+0530 I NETWORK  [conn32] end connection 127.0.0.1:45341 (2 connections now open)
+2016-10-07T10:06:39.265+0530 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:45359 #35 (3 connections now open)
+2016-10-07T10:07:07.497+0530 I NETWORK  [conn34] end connection 127.0.0.1:45357 (2 connections now open)
+2016-10-07T10:07:07.497+0530 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:45366 #36 (3 connections now open)
+2016-10-07T10:07:09.280+0530 I NETWORK  [conn35] end connection 127.0.0.1:45359 (2 connections now open)
+2016-10-07T10:07:09.280+0530 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:45369 #37 (4 connections now open)
+2016-10-07T10:07:37.507+0530 I NETWORK  [conn36] end connection 127.0.0.1:45366 (2 connections now open)
+2016-10-07T10:07:37.508+0530 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:45380 #38 (3 connections now open)
+2016-10-07T10:07:39.293+0530 I NETWORK  [conn37] end connection 127.0.0.1:45369 (2 connections now open)
+2016-10-07T10:07:39.294+0530 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:45382 #39 (3 connections now open)
+2016-10-07T10:08:07.518+0530 I NETWORK  [conn38] end connection 127.0.0.1:45380 (2 connections now open)
+2016-10-07T10:08:07.518+0530 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:45387 #40 (3 connections now open)
+2016-10-07T10:08:09.307+0530 I NETWORK  [conn39] end connection 127.0.0.1:45382 (2 connections now open)
+2016-10-07T10:08:09.307+0530 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:45390 #41 (3 connections now open)
+2016-10-07T10:08:37.529+0530 I NETWORK  [conn40] end connection 127.0.0.1:45387 (2 connections now open)
+2016-10-07T10:08:37.529+0530 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:45393 #42 (4 connections now open)
+2016-10-07T10:08:39.316+0530 I NETWORK  [conn41] end connection 127.0.0.1:45390 (2 connections now open)
+2016-10-07T10:08:39.316+0530 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:45396 #43 (3 connections now open)
+2016-10-07T10:09:07.542+0530 I NETWORK  [conn42] end connection 127.0.0.1:45393 (2 connections now open)
+2016-10-07T10:09:07.542+0530 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:45412 #44 (3 connections now open)
+2016-10-07T10:09:09.326+0530 I NETWORK  [conn43] end connection 127.0.0.1:45396 (2 connections now open)
+2016-10-07T10:09:09.326+0530 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:45415 #45 (3 connections now open)
+2016-10-07T10:09:37.555+0530 I NETWORK  [conn44] end connection 127.0.0.1:45412 (2 connections now open)
+2016-10-07T10:09:37.555+0530 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:45421 #46 (3 connections now open)
+2016-10-07T10:09:39.338+0530 I NETWORK  [conn45] end connection 127.0.0.1:45415 (2 connections now open)
+2016-10-07T10:09:39.339+0530 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:45424 #47 (3 connections now open)
+2016-10-07T10:10:07.566+0530 I NETWORK  [conn46] end connection 127.0.0.1:45421 (2 connections now open)
+2016-10-07T10:10:07.566+0530 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:45429 #48 (3 connections now open)
+2016-10-07T10:10:09.348+0530 I NETWORK  [conn47] end connection 127.0.0.1:45424 (2 connections now open)
+2016-10-07T10:10:09.348+0530 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:45431 #49 (3 connections now open)
+2016-10-07T10:10:37.577+0530 I NETWORK  [conn48] end connection 127.0.0.1:45429 (2 connections now open)
+2016-10-07T10:10:37.577+0530 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:45440 #50 (3 connections now open)
+2016-10-07T10:10:39.362+0530 I NETWORK  [conn49] end connection 127.0.0.1:45431 (2 connections now open)
+2016-10-07T10:10:39.362+0530 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:45443 #51 (4 connections now open)
