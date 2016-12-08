@@ -1,7 +1,7 @@
 # Course Structure:
 
 Chapter 1: Introduction
-    What is MongoDB?
+    What is MongoDB?
     Overview of Building an App with MongoDB
     Installing MongoDB (mac)
     Installing MongoDB (windows)
@@ -17,7 +17,7 @@ Chapter 1: Introduction
     Blog in Relational Tables    
 
 Chapter 2: CRUD
-     CRUD (Creating, Reading and Updating Data) - Mongo shell
+     CRUD (Creating, Reading and Updating Data) - Mongo shell
      query operators
      update operators and a few commands
     Creating Documents
@@ -48,7 +48,7 @@ Chapter 2: CRUD
     
 
 
-Chapter 3: Schema Design    
+Chapter 3: Schema Design    
     MongoDB Schema Design
     Relational Normalization
     Mongo Design for Blog
@@ -64,7 +64,7 @@ Chapter 3: Schema Design
 
 
 Chapter 4: Performance
-    Storage Engines: Introduction
+    Storage Engines: Introduction
     Storage Engines: MMAPv1
     Storage Engines: WiredTiger
     Indexes
@@ -94,7 +94,7 @@ Chapter 4: Performance
     
 
 Chapter 5: Aggregation Framework
-    Simple Aggregation Example
+    Simple Aggregation Example
     The Aggregation Pipeline    
     Compound Grouping
     Using a document for _id
@@ -123,7 +123,7 @@ Chapter 5: Aggregation Framework
 
 
 Chapter 6: Application Engineering
-    Introduction to Week 6
+    Introduction to Week 6
     Write Concern
     Network Errors
     Introduction to Replication
