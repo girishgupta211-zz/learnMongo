@@ -1,7 +1,20 @@
+# What is MongoDB:
+* MongoDB is an open source database that uses a document-oriented data model.
+
+* MongoDB is one of several database types to arise in the mid-2000s under the NoSQL banner. Instead of using tables and rows as in relational databases, MongoDB is built on an architecture of collections and documents. Documents comprise sets of key-value pairs and are the basic unit of data in MongoDB. Collections contain sets of documents and function as the equivalent of relational database tables
+
+* Like other NoSQL databases, MongoDB supports dynamic schema design, allowing the documents in a collection to have different fields and structures. The database uses a document storage and data interchange format called BSON, which provides a binary representation of JSON-like documents. Automatic sharding enables data in a collection to be distributed across multiple systems for horizontal scalability as data volumes increase.
+
+# Course Duration:
+ this is 7 weeks course
+ 
+# Prerquisites:
+  Basic python and relational database
+
 # Course Structure:
+```javascript
 
 Chapter 1: Introduction
-```javascript
     What is MongoDB?
     Overview of Building an App with MongoDB
     Installing MongoDB (mac)
