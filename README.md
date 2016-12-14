@@ -1,8 +1,8 @@
 # Course Structure:
 
 Chapter 1: Introduction
-    What is MongoDB?
-    Overview of Building an App with MongoDB
+    * What is MongoDB?
+    * Overview of Building an App with MongoDB
     Installing MongoDB (mac)
     Installing MongoDB (windows)
     Installing MongoDB (Linux)     
