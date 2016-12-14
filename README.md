@@ -1,8 +1,9 @@
 # Course Structure:
 
 Chapter 1: Introduction
-    * What is MongoDB?
-    * Overview of Building an App with MongoDB
+```javascript
+    What is MongoDB?
+    Overview of Building an App with MongoDB
     Installing MongoDB (mac)
     Installing MongoDB (windows)
     Installing MongoDB (Linux)     
@@ -146,3 +147,5 @@ Chapter 6: Application Engineering
     Implications of Sharding
     Sharding + Replication
     Choosing a Shard Key
+
+```
